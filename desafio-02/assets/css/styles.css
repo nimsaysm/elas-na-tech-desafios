@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&family=Roboto:wght@300;400;700&display=swap');
+
+
+:root {
+    --yellow-color: #fcc30b;
+    --yellow-darker: #ffc400;
+    --yellow-lighter: #fceeb7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans';
+    font-size: 1.6rem;
+    background-color: white;
+    text-align: center;
+}
+
+header, #Sobre, #ODS7, #EnergiasRenovaveis, #InfoDev {
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.titulo {
+    margin-bottom: 2rem;
+}
+
+span {
+    background-color: var(--yellow-lighter);
+}
+
+.info-dev, #ODS7 li {
+    margin-bottom: 1.5rem;
+}
+
+header {
+    background-color: var(--yellow-color);
+    display: grid;
+    justify-items: center;
+}
+
+#logo {
+    width: 7rem;
+}
+
+#nav-bar li {
+    list-style-type: none;
+    margin: 0.7rem;
+    font-size: 1.8rem;
+}
+
+#nav-bar a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nav-bar a:hover, h5 a:hover, .info-dev a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+#Sobre {
+    height: 30rem;
+    background-image: linear-gradient(#fceeb7d9, #fceeb7d9), url('../imgs/background.png');
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+#Sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#description {
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+#start {
+    color: rgb(34, 34, 34);
+    padding: 0.2rem;
+    width: 10rem;
+    text-transform: uppercase;
+    border: 0.2rem solid rgb(34, 34, 34);
+    border-radius: 1rem;
+}
+
+#start:hover {
+    background-color: rgba(34, 34, 34, 0.251);
+}
+
+h5 {
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+h5 a, .info-dev a {
+    color: var(--yellow-darker);
+}
+
+#ODS7 li {
+    list-style-type: none;
+}
+
+#energias {
+    display: grid;
+    gap: 3rem;
+}
+
+.energia-img {
+    width: 8rem;
+}
+
+.energia-img:hover {
+    filter: drop-shadow(0 3px 4px var(--yellow-color));
+}
+
+.energia-nome {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#logo-yasmin {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: var(--yellow-darker);
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer div {
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: rgb(81, 81, 81);
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header a {
+        margin: 1rem;
+    }
+
+    #energias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    #InfoDev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-yasmin {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #InfoDev div {
+        margin-left: 3rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer div {
+        width: 40vw;
+    }
+
+    header, #Sobre, #ODS7, #EnergiasRenovaveis, #InfoDev {
+        margin-bottom: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #energias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
